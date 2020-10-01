@@ -1,3 +1,4 @@
+import 'package:Caculadora_do_amor_signos/tela_resultado.dart';
 import 'package:flutter/material.dart';
 import 'model/data.dart';
 
@@ -25,6 +26,7 @@ class SignoFormulario extends StatefulWidget {
   SignoFormulario({Key key, this.title}) : super(key: key);
 
   final signosItems = Signo().retornarSignos();
+  final signoConsulta = Signo();
   final String title;
 
   @override
@@ -62,6 +64,7 @@ class _SignoFormularioState extends State<SignoFormulario> {
       ),
       body: SingleChildScrollView(
         child: Container(
+          height: MediaQuery.of(context).size.height * 1,
           padding: EdgeInsets.only(
             top: 40,
             left: 20,
@@ -70,77 +73,126 @@ class _SignoFormularioState extends State<SignoFormulario> {
           ),
           width: double.infinity,
           color: Colors.redAccent,
-          child: Column(
-            children: <Widget>[
-              Text(
-                'Selecione',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 30,
-                ),
-              ),
-              SizedBox(
-                height: 15,
-              ),
-              Text(
-                'Os',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 30,
-                ),
-              ),
-              SizedBox(
-                height: 15,
-              ),
-              Text(
-                'Signos',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 30,
-                ),
-              ),
-              SizedBox(
-                height: 30,
-              ),
-              Icon(
-                Icons.favorite,
-                size: 80,
-                color: Colors.white,
-              ),
-              SizedBox(
-                height: 20,
-              ),
-              Column(
-                children: <Widget>[
-                  Container(
-                    padding: EdgeInsets.all(10.0),
-                    child: DropdownButton(
-                      value: _signoSelecionado1,
-                      items: _listaSigno,
-                      onChanged: (value) {
-                        setState(() {
-                          _signoSelecionado1 = value;
-                        });
-                      },
-                    ),
+          child: Container(
+            child: Column(
+              children: <Widget>[
+                Text(
+                  'Selecione',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 30,
                   ),
-                  Container(
-                    padding: EdgeInsets.all(10.0),
-                    child: DropdownButton(
-                      value: _signoSelecionado2,
-                      items: _listaSigno,
-                      onChanged: (value) {
-                        setState(() {
-                          _signoSelecionado2 = value;
-                        });
-                        print('signo 1 : $_signoSelecionado1 ');
-                        print('signo 2 : $_signoSelecionado2');
-                      },
-                    ),
+                ),
+                SizedBox(
+                  height: 15,
+                ),
+                Text(
+                  'Os',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 30,
                   ),
-                ],
-              ),
-            ],
+                ),
+                SizedBox(
+                  height: 15,
+                ),
+                Text(
+                  'Signos',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 30,
+                  ),
+                ),
+                SizedBox(
+                  height: 30,
+                ),
+                Icon(
+                  Icons.favorite,
+                  size: 80,
+                  color: Colors.white,
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                Container(
+                  color: Colors.redAccent,
+                  child: Column(
+                    children: <Widget>[
+                      Container(
+                        padding: EdgeInsets.all(10.0),
+                        child: DropdownButton(
+                          value: _signoSelecionado1,
+                          items: _listaSigno,
+                          onChanged: (value) {
+                            setState(() {
+                              _signoSelecionado1 = value;
+                            });
+                          },
+                        ),
+                      ),
+                      Container(
+                        padding: EdgeInsets.all(10.0),
+                        child: DropdownButton(
+                          value: _signoSelecionado2,
+                          items: _listaSigno,
+                          onChanged: (value) {
+                            setState(() {
+                              _signoSelecionado2 = value;
+                            });
+                            print('signo 1 : $_signoSelecionado1');
+                            print('signo 2 : $_signoSelecionado2');
+                          },
+                        ),
+                      ),
+                      FlatButton(
+                        child: Container(
+                          alignment: Alignment.center,
+                          width: 120,
+                          height: 40,
+                          margin: EdgeInsets.symmetric(
+                            vertical: 50,
+                            horizontal: 50,
+                          ),
+                          child: Text(
+                            'Enviar',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 20,
+                            ),
+                          ),
+                          decoration: BoxDecoration(
+                            color: Colors.redAccent,
+                            border: Border.all(
+                              color: Colors.white,
+                              width: 4.0,
+                            ),
+                            borderRadius: BorderRadius.all(
+                              Radius.circular(20),
+                            ),
+                          ),
+                        ),
+                        onPressed: () {
+                          setState(
+                            () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => TelaResultado(
+                                    widget.signoConsulta.interprete(
+                                        widget.signosItems[_signoSelecionado1],
+                                        widget.signosItems[_signoSelecionado2]),
+                                  ),
+                                ),
+                              );
+                            },
+                          );
+                        },
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ),
