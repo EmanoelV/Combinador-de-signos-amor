@@ -25,18 +25,18 @@ class Signo {
   ];
 
   Map<String, int> _signos = {
-    "aries": 0,
-    "touro": 1,
-    "gemeos": 2,
-    "cancer": 3,
-    "leao": 4,
-    "virgem": 5,
-    "libra": 6,
-    "escorpiao": 7,
-    "sagitario": 8,
-    "capricornio": 9,
-    "aquario": 10,
-    "peixes": 11
+    "Áries": 0,
+    "Touro": 1,
+    "Gêmeos": 2,
+    "Câncer": 3,
+    "Leão": 4,
+    "Virgem": 5,
+    "Libra": 6,
+    "Escorpião": 7,
+    "Sagitário": 8,
+    "Capricórnio": 9,
+    "Aquário": 10,
+    "Peixes": 11,
   };
 
   List retornarSignos() {

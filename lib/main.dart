@@ -62,12 +62,12 @@ class _SignoFormularioState extends State<SignoFormulario> {
       ),
       body: SingleChildScrollView(
         child: Container(
-          /*padding: EdgeInsets.only(
+          padding: EdgeInsets.only(
             top: 40,
             left: 20,
             right: 20,
             bottom: 40,
-          ),*/
+          ),
           width: double.infinity,
           color: Colors.redAccent,
           child: Column(
