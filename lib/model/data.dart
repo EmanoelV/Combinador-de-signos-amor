@@ -39,6 +39,10 @@ class Signo {
     "peixes": 11
   };
 
+  List retornarSignos() {
+    return _signos.keys.toList();
+  }
+
   String interprete(String signo1, String signo2) {
     //Essa será a função chamada para 'calcular' os signos
     return _mensagem[_tabela[_signos[signo1]][_signos[signo2]]];
