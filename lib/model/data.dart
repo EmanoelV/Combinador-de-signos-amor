@@ -1,4 +1,4 @@
-class Signo {
+class Data {
   List<String> _mensagem = [
     "Quente – Os seus signos estão muito bem alinhados. As suas formas de amar são parecidas o suficiente para se perceberem, e diferentes o suficiente para ser excitante.",
     "Paixão Perfeita – Os vossos signos estão perfeitamente alinhados. As vossas formas de amar são tão parecidas que é estranho. A vossa relação é muito intensa.",
@@ -39,9 +39,7 @@ class Signo {
     "Peixes": 11,
   };
 
-  List retornarSignos() {
-    return _signos.keys.toList();
-  }
+  List<String> get listSignos => _signos.keys.toList();
 
   String interprete(String signo1, String signo2) {
     //Essa será a função chamada para 'calcular' os signos
