@@ -1,4 +1,5 @@
 import 'package:Caculadora_do_amor_signos/controller/signos.dart';
+import 'package:Caculadora_do_amor_signos/model/data.dart';
 import 'package:Caculadora_do_amor_signos/view/telaRresultado.dart';
 import 'package:Caculadora_do_amor_signos/view/widget/signoFormulario/sendButon.dart';
 import 'package:Caculadora_do_amor_signos/view/widget/signoFormulario/signoSelector.dart';
@@ -11,6 +12,7 @@ class SignoFormulario extends StatefulWidget {
   final List<String> signosItems = Signo().listSignos;
   final signoConsulta = Signo();
   final String title;
+  final Data signo = new Data();
 
   @override
   _SignoFormularioState createState() => _SignoFormularioState();
@@ -21,15 +23,21 @@ class _SignoFormularioState extends State<SignoFormulario> {
   var _signoSelecionado2 = 0;
 
   openResult() {
+    widget.signo.receberSignos(widget.signosItems[_signoSelecionado1],
+        widget.signosItems[_signoSelecionado2]);
     setState(() {
       Navigator.push(
         context,
-        MaterialPageRoute(
+        /*MaterialPageRoute(
           builder: (context) => TelaResultado(
             widget.signoConsulta.calcular(
                 widget.signosItems[_signoSelecionado1],
                 widget.signosItems[_signoSelecionado2]),
           ),
+        ),*/
+        MaterialPageRoute(
+          builder: (context) => TelaResultado(
+              widget.signo.resultadoTitulo, widget.signo.resultadoTexto),
         ),
       );
     });

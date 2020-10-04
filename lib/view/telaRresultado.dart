@@ -1,8 +1,11 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 class TelaResultado extends StatelessWidget {
-  final String resultado;
-  TelaResultado(this.resultado);
+  final String resultadoTitulo;
+  final String resultadoTexto;
+  TelaResultado(this.resultadoTitulo, this.resultadoTexto);
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +28,53 @@ class TelaResultado extends StatelessWidget {
         ),
       ),
       body: Container(
-        child: Text(this.resultado),
+        height: 600,
+        color: Colors.redAccent,
+        padding: EdgeInsets.only(
+          top: 100,
+          left: 40,
+          right: 40,
+        ),
+        child: Column(
+          // mainAxisAlignment: MainAxisAlignment.spaceAround,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            Container(
+              color: Colors.redAccent,
+              child: Text(
+                this.resultadoTitulo,
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 30,
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 60,
+            ),
+            Container(
+              padding: EdgeInsets.all(20),
+              decoration: BoxDecoration(
+                color: Colors.redAccent,
+                border: Border.all(
+                  color: Colors.white,
+                  width: 4.0,
+                ),
+                borderRadius: BorderRadius.all(
+                  Radius.circular(20),
+                ),
+              ),
+              child: Text(
+                this.resultadoTexto,
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 15,
+                ),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
