@@ -28,13 +28,7 @@ class _SignoFormularioState extends State<SignoFormulario> {
     setState(() {
       Navigator.push(
         context,
-        /*MaterialPageRoute(
-          builder: (context) => TelaResultado(
-            widget.signoConsulta.calcular(
-                widget.signosItems[_signoSelecionado1],
-                widget.signosItems[_signoSelecionado2]),
-          ),
-        ),*/
+ 
         MaterialPageRoute(
           builder: (context) => TelaResultado(
               widget.signo.resultadoTitulo, widget.signo.resultadoTexto),
