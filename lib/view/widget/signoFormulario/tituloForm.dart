@@ -2,14 +2,15 @@ import 'package:flutter/material.dart';
 
 class TituloForm extends StatelessWidget {
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext vcontext) {
     return Container(
         child: Column(children: [
       Text(
         'Selecione',
         style: TextStyle(
           color: Colors.white,
-          fontSize: 30,
+          fontSize: 50,
+          fontFamily: 'GrandHotel',
         ),
       ),
       SizedBox(
@@ -19,7 +20,8 @@ class TituloForm extends StatelessWidget {
         'Os',
         style: TextStyle(
           color: Colors.white,
-          fontSize: 30,
+          fontSize: 50,
+          fontFamily: 'GrandHotel',
         ),
       ),
       SizedBox(
@@ -29,7 +31,8 @@ class TituloForm extends StatelessWidget {
         'Signos',
         style: TextStyle(
           color: Colors.white,
-          fontSize: 30,
+          fontSize: 50,
+          fontFamily: 'GrandHotel',
         ),
       ),
       SizedBox(
@@ -37,7 +40,7 @@ class TituloForm extends StatelessWidget {
       ),
       Icon(
         Icons.favorite,
-        size: 80,
+        size: 100,
         color: Colors.white,
       ),
       SizedBox(

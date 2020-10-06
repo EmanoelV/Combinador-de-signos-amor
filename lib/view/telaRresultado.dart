@@ -24,6 +24,7 @@ class TelaResultado extends StatelessWidget {
           style: TextStyle(
             color: Colors.white,
             fontSize: 30,
+            fontFamily: 'GrandHotel',
           ),
         ),
       ),
@@ -45,7 +46,8 @@ class TelaResultado extends StatelessWidget {
                 this.resultadoTitulo,
                 style: TextStyle(
                   color: Colors.white,
-                  fontSize: 30,
+                  fontSize: 50,
+                  fontFamily: 'GrandHotel',
                 ),
               ),
             ),
@@ -68,7 +70,8 @@ class TelaResultado extends StatelessWidget {
                 this.resultadoTexto,
                 style: TextStyle(
                   color: Colors.white,
-                  fontSize: 15,
+                  fontSize: 30,
+                  fontFamily: 'GrandHotel',
                 ),
                 textAlign: TextAlign.center,
               ),

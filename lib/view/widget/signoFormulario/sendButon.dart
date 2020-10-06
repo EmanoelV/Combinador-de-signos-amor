@@ -18,7 +18,8 @@ class SendButton extends StatelessWidget {
             'Enviar',
             style: TextStyle(
               color: Colors.white,
-              fontSize: 20,
+              fontSize: 30,
+              fontFamily: 'GrandHotel',
             ),
           ),
           decoration: BoxDecoration(
