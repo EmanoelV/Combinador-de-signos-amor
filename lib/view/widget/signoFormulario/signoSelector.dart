@@ -14,7 +14,14 @@ class SignoSelector extends StatelessWidget {
     return listSignos.map((signo) {
       ct++;
       return DropdownMenuItem(
-        child: new Text(signo),
+        child: new Text(
+          signo,
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 20,
+          ),
+          textAlign: TextAlign.center,
+        ),
         value: ct,
       );
     }).toList();
@@ -30,6 +37,16 @@ class SignoSelector extends StatelessWidget {
       child: DropdownButton(
         value: _signoSelecionado,
         items: _items,
+        icon: Icon(
+          Icons.arrow_drop_down,
+          size: 30,
+          color: Colors.white,
+        ),
+        dropdownColor: Colors.redAccent,
+        underline: Container(
+          height: 2,
+          color: Colors.white,
+        ),
         onChanged: (value) => callBack(value),
       ),
     );

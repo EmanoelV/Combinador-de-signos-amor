@@ -32,7 +32,7 @@ class TelaResultado extends StatelessWidget {
         height: 600,
         color: Colors.redAccent,
         padding: EdgeInsets.only(
-          top: 100,
+          top: 60,
           left: 40,
           right: 40,
         ),
@@ -49,6 +49,7 @@ class TelaResultado extends StatelessWidget {
                   fontSize: 50,
                   fontFamily: 'GrandHotel',
                 ),
+                textAlign: TextAlign.center,
               ),
             ),
             SizedBox(

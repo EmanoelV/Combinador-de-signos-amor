@@ -11,14 +11,14 @@ class SendButton extends StatelessWidget {
       child: FlatButton(
         child: Container(
           alignment: Alignment.center,
-          width: 120,
-          height: 40,
+          width: 200,
+          height: 60,
           margin: EdgeInsets.fromLTRB(0, 50, 0, 0),
           child: Text(
             'Enviar',
             style: TextStyle(
               color: Colors.white,
-              fontSize: 30,
+              fontSize: 40,
               fontFamily: 'GrandHotel',
             ),
           ),
