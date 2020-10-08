@@ -11,8 +11,8 @@ class SendButton extends StatelessWidget {
       child: FlatButton(
         child: Container(
           alignment: Alignment.center,
-          width: 200,
-          height: 60,
+          width: 180,
+          height: 50,
           margin: EdgeInsets.fromLTRB(0, 50, 0, 0),
           child: Text(
             'Enviar',
