@@ -14,9 +14,6 @@ class TituloForm extends StatelessWidget {
               fontFamily: 'GrandHotel',
             ),
           ),
-          SizedBox(
-            height: 15,
-          ),
           Text(
             'Os',
             style: TextStyle(
@@ -24,9 +21,6 @@ class TituloForm extends StatelessWidget {
               fontSize: 50,
               fontFamily: 'GrandHotel',
             ),
-          ),
-          SizedBox(
-            height: 15,
           ),
           Text(
             'Signos',
@@ -36,16 +30,10 @@ class TituloForm extends StatelessWidget {
               fontFamily: 'GrandHotel',
             ),
           ),
-          SizedBox(
-            height: 30,
-          ),
           Icon(
             Icons.favorite,
             size: 100,
             color: Colors.white,
-          ),
-          SizedBox(
-            height: 20,
           ),
         ],
       ),

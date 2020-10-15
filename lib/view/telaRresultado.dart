@@ -52,9 +52,6 @@ class TelaResultado extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
             ),
-            SizedBox(
-              height: 60,
-            ),
             Container(
               padding: EdgeInsets.all(20),
               decoration: BoxDecoration(
