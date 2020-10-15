@@ -1,6 +1,6 @@
 # Combinador de Signos - Amor
 
-![alt text](https://github.com/EmanoelV/Combinador-de-signos-amor/tree/master/prints/img1.jpeg) ![alt text](https://github.com/EmanoelV/Combinador-de-signos-amor/tree/master/prints/img2.jpeg)
+![alt text](https://raw.githubusercontent.com/EmanoelV/Combinador-de-signos-amor/master/prints/img1.jpeg) ![alt text](https://raw.githubusercontent.com/EmanoelV/Combinador-de-signos-amor/master/prints/img2.jpeg)
 
 Aplicativo de combinação de signos que gera uma mensagem de compatibilidade romântica de acordo com o par de signos
 
