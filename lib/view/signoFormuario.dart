@@ -1,9 +1,9 @@
-import 'package:Caculadora_do_amor_signos/controller/signos.dart';
-import 'package:Caculadora_do_amor_signos/model/data.dart';
-import 'package:Caculadora_do_amor_signos/view/telaRresultado.dart';
-import 'package:Caculadora_do_amor_signos/view/widget/signoFormulario/sendButon.dart';
-import 'package:Caculadora_do_amor_signos/view/widget/signoFormulario/signoSelector.dart';
-import 'package:Caculadora_do_amor_signos/view/widget/signoFormulario/tituloForm.dart';
+import 'package:combinador_de_signos_amor/controller/signos.dart';
+import 'package:combinador_de_signos_amor/model/data.dart';
+import 'package:combinador_de_signos_amor/view/telaRresultado.dart';
+import 'package:combinador_de_signos_amor/view/widget/signoFormulario/sendButon.dart';
+import 'package:combinador_de_signos_amor/view/widget/signoFormulario/signoSelector.dart';
+import 'package:combinador_de_signos_amor/view/widget/signoFormulario/tituloForm.dart';
 import 'package:flutter/material.dart';
 
 class SignoFormulario extends StatefulWidget {
@@ -28,7 +28,6 @@ class _SignoFormularioState extends State<SignoFormulario> {
     setState(() {
       Navigator.push(
         context,
- 
         MaterialPageRoute(
           builder: (context) => TelaResultado(
               widget.signo.resultadoTitulo, widget.signo.resultadoTexto),

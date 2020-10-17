@@ -1,5 +1,5 @@
-name: Caculadora_do_amor_signos
-description: A new Flutter project.
+name: combinador_de_signos_amor
+description: Combinador de signos - amor é um aplicatico que combina ou calcula a compatibilidade romântica entre dois signos.
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `pub publish`. This is preferred for private packages.

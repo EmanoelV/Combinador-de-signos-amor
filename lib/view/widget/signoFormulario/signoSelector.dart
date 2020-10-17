@@ -1,4 +1,4 @@
-import 'package:Caculadora_do_amor_signos/controller/signos.dart';
+import 'package:combinador_de_signos_amor/controller/signos.dart';
 import 'package:flutter/material.dart';
 
 @immutable

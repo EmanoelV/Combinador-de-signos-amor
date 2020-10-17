@@ -1,4 +1,4 @@
-import 'package:Caculadora_do_amor_signos/view/signoFormuario.dart';
+import './view/signoFormuario.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,13 +11,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: true,
-      title: 'Calculadora do Amor - Signos',
+      title: 'Combinador de Signos - Amor',
       theme: ThemeData(
         primarySwatch: Colors.red,
         accentColor: Colors.redAccent[700],
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: SignoFormulario(title: 'Calculo do Amor - Signos'),
+      home: SignoFormulario(title: 'Combinador de Signos - Amor'),
     );
   }
 }
