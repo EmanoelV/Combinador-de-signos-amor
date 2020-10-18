@@ -1,5 +1,5 @@
 # Combinador de Signos - Amor
-Solarized dark             |  Solarized Ocean
+img1             |  img2
 :-------------------------:|:-------------------------:
 ![alt text](https://raw.githubusercontent.com/EmanoelV/Combinador-de-signos-amor/master/prints/img1.jpeg) | ![alt text](https://raw.githubusercontent.com/EmanoelV/Combinador-de-signos-amor/master/prints/img2.jpeg)
 
